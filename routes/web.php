@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -36,8 +37,13 @@ Route::get('users/{id?}/edit',  [UserController::class, 'edit'])->name('users.ed
 Route::put('users/{id}', [UserController::class, 'update'])->name('user.update');
 Route::delete('users/{id}', [UserController::class, 'destroy'])->name('user.destroy');
 
-//crud Usuarios
-
+//crud Productos
+Route::get('products', [ProductController::class, 'index'])->name('product.index');
+Route::get('products/create', [ProductController::class, 'create'])->name('product.create');
+Route::post('products/store', [ProductController::class, 'store'])->name('product.store');
+Route::get('products/{id?}/edit',  [ProductController::class, 'edit'])->name('product.edit');
+Route::put('products/{id}', [ProductController::class, 'update'])->name('product.update');
+Route::delete('products/{id}', [ProductController::class, 'destroy'])->name('product.destroy');
 
 
 
