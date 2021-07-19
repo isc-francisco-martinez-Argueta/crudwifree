@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Product;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,9 +15,21 @@ class ProductController extends Controller
      */
     public function index()
     {
+
          $products=Product::get()->all();
 
+
         return  view('Product.index', ['products' =>$products]);
+    }
+    public function indexauth()
+    {
+        $user=User::find(Auth::id());
+
+
+        $products=$user->products;
+
+
+        return  view('Product.indexauth', ['products' =>$products]);
     }
 
     /**

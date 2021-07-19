@@ -39,6 +39,7 @@ Route::delete('users/{id}', [UserController::class, 'destroy'])->name('user.dest
 
 //crud Productos
 Route::get('products', [ProductController::class, 'index'])->name('product.index');
+Route::get('myproducts', [ProductController::class, 'indexauth'])->name('product.indexauth');
 Route::get('products/create', [ProductController::class, 'create'])->name('product.create');
 Route::post('products/store', [ProductController::class, 'store'])->name('product.store');
 Route::get('products/{id?}/edit',  [ProductController::class, 'edit'])->name('product.edit');
