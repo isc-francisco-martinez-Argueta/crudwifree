@@ -1,0 +1,29 @@
+[33mcommit e48270d491721ca870bc985b95b57363a50aec78[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Francisco Martinez <pakitofama28@gmail.com>
+Date:   Sun Jul 18 20:03:26 2021 -0500
+
+    Relación un usuario tiene muchos productos y un producto le perntenece a un usario, igual se agrego un botón en el nav con el nombre Mis productos, este link nos redirige a una tabla dónde visualizo todos los productos que creó el usarios que esta logueado
+
+[33mcommit 4e05c015d83c0842ca43fe444c774451b03f568f[m
+Author: Francisco Martinez <pakitofama28@gmail.com>
+Date:   Sun Jul 18 15:43:39 2021 -0500
+
+    Se creo Modelo,Controlador, Migración de producto, tambien las rutas y vistas para visualizar productos, editar,eliminar y crear
+
+[33mcommit 806c45bc6e6ce70927e652c324df2bdfb1952643[m
+Author: Francisco Martinez <pakitofama28@gmail.com>
+Date:   Sun Jul 18 14:12:53 2021 -0500
+
+    Se creo un controlador con el nombre UserController con todos los metodos de un CRUD, rutas para listar,crear,editar y eliminar, se creo una carpeta con el nombre User y en ella los archivos de las vistas index, create y edit
+
+[33mcommit c2894fab20272ba0583a403109a83cda4dd3e807[m
+Author: Francisco Martinez <pakitofama28@gmail.com>
+Date:   Sun Jul 18 13:36:49 2021 -0500
+
+    Componente de login y registro
+
+[33mcommit 0daff2fdc78479eeb6cd22acf27103c84c03bf00[m
+Author: Francisco Martinez <pakitofama28@gmail.com>
+Date:   Sun Jul 18 13:11:53 2021 -0500
+
+    Init proyecto

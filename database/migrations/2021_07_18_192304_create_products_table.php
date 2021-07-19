@@ -21,7 +21,9 @@ class CreateProductsTable extends Migration
             $table->decimal('price',10,2)->default(0);
 
 
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
             $table->timestamps();
         });
     }
